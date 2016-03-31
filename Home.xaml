@@ -1,0 +1,46 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.ControlsBasics.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="670.149" Width="1200"  ResizeMode="NoResize">
+    <Grid Background="#FF8bd3c7" Margin="0,0,0,-9">
+        <Viewbox Height="703" VerticalAlignment="Top">
+            <Grid Width="1920" Height="1080">
+                <Image Name="camera" />
+                <Canvas Name="canvas" >
+                </Canvas>
+            </Grid>
+        </Viewbox>
+        <TextBox Background="#FF8bd3c7" Canvas.Left="191" TextWrapping="Wrap" Text="مرحباً بكم في برنامج الجدارية الاعلامية , بواسطة الكنيكت&#xA;&#xA;للحصول على أفضل أداء للبرنامج نرجو اتباع التالي :ـ&#xA;أولا : الوقوف على مسافة مناسبة من جهاز الكنكت&#xA;ثانيا: التاكد من ان البرنامج يلتقط حالة اليد اليمنى واليسرى ( مفتوحة أو مغلقة ) كما يعرض في الجزء الأيمن من هذه الشاشة &#xA;ثالثا: تشغيل البرنامج من خلال الضغط على زر بدء التشغيل&#xA;لتحريك القائمة يرجى قبض اليد وتحريكها لليمين &#xA;لفتح عنصر من القائمة يرجى دفع اليد مرتين متتاليتين للأمام  &#xA;للعودة للقائمة الرئيسية وجهي اليد على زر العودة&#xA;" FontSize="32" FontFamily="Traditional Arabic" Canvas.Top="22" TextAlignment="Right" Margin="138,32,420,134"/>
+        <Grid Style="{StaticResource ContainerStyle}">
+            <StackPanel Margin="20">
+                <StackPanel>
+                    <TextBlock Text="Right hand state:" Style="{StaticResource TitleStyle}" />
+                    <TextBlock Name="tblRightHandState" Text="-" Style="{StaticResource StateStyle}" />
+                </StackPanel>
+                <StackPanel Margin="0,50,0,0">
+                    <TextBlock Text="Left hand state:" Style="{StaticResource TitleStyle}" />
+                    <TextBlock Name="tblLeftHandState" Text="-" Style="{StaticResource StateStyle}" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Button x:Name="Next" Click="Next_Click"
+        Content="بدء التشغيل"
+        Margin="0,530,474,0" FontSize="26" FontFamily="Traditional Arabic" HorizontalAlignment="Right" Width="141" Height="70" VerticalAlignment="Top"/>
+
+        <Button x:Name="Apoutus" Click="About_Click"
+        Content="من نحن"
+        Margin="0,530,635,0" FontSize="26" FontFamily="Traditional Arabic" HorizontalAlignment="Right" Width="141" Height="70" VerticalAlignment="Top"/>
+
+        <Button x:Name="Need" Click="Req_Click"
+        Content="متطلبات التشغيل"
+        Margin="211,530,0,0" FontSize="26" FontFamily="Traditional Arabic" HorizontalAlignment="Left" Width="189" Height="70" VerticalAlignment="Top"/>
+        <Button x:Name="End"
+        Content="خروج" 
+        Margin="0,530,1014,0" FontSize="26" FontFamily="Traditional Arabic" Click="End_Click" HorizontalAlignment="Right" Width="136" Height="70" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="30,115,0,0" VerticalAlignment="Top" Width="231" Source="Images/xbox-one-kinect-sensor.png"/>
+        <Image Canvas.Left="19" Canvas.Top="554" Source="Images/Picture2.jpg" Margin="59,229,970,243"/>
+        <Image Canvas.Left="19" Canvas.Top="554" Source="Images/Picture3.jpg" Margin="46,373,970,134"/>
+
+    </Grid>
+</Window>

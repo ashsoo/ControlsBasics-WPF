@@ -1,0 +1,20 @@
+﻿ControlsBasics-WPF
+
+
+winexe
+C#
+.cs
+C:\Users\Windows 8\Documents\ControlsBasics-WPF\obj\Debug\
+Microsoft.Samples.Kinect.ControlsBasics
+none
+false
+DEBUG;TRACE
+C:\Users\Windows 8\Documents\ControlsBasics-WPF\App.xaml
+181933494810
+
+24-1020546590
+15978498167
+Common\StandardStyles.xaml;HandPointers\HandPointerStyles.xaml;Home.xaml;MainWindow.xaml;Pages\ButtonSample.xaml;Pages\CheckBoxRadioButtonSample.xaml;Pages\EngagementSettings.xaml;Pages\ItemsControlsSample.xaml;Pages\KinectPointerPointSample.xaml;Pages\Courses.xaml;Pages\Lamsa.xaml;Pages\Tours.xaml;Pages\Tacreem.xaml;Pages\ScrollViewerSample.xaml;Pages\SliderSample.xaml;Req_win.xaml;SelectionDisplay.xaml;Window1.xaml;
+
+False
+
